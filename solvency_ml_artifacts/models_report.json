@@ -1,0 +1,625 @@
+{
+  "timestamp": "2025-08-13T22:30:30.375529",
+  "data_shape": [
+    10230,
+    27
+  ],
+  "feature_columns": [
+    "ZSK1",
+    "ZSK2",
+    "ZSK3",
+    "Vola4",
+    "Vola5",
+    "Vola6",
+    "Verlust7",
+    "Verlust8",
+    "MR9",
+    "MR10",
+    "MR11",
+    "MR12",
+    "MR13",
+    "MR14",
+    "MR15",
+    "MR16",
+    "MR17",
+    "MR18",
+    "MR19",
+    "MR20"
+  ],
+  "target_columns": [
+    "EM",
+    "SCR",
+    "Quote"
+  ],
+  "regulatory_distribution": {
+    "insolvent": 272,
+    "undercapitalized": 1654,
+    "well_capitalized": 6499,
+    "total": 10230
+  },
+  "train_test_split": {
+    "train_size": 6138,
+    "val_size": 2046,
+    "test_size": 2046,
+    "random_state": 8
+  },
+  "best_models": {
+    "quote": {
+      "model_name": "Quadratic (Degree 2)",
+      "model_key": "quadratic",
+      "validation_rmse": 0.32082065886285255,
+      "test_metrics": {
+        "test_RMSE": 0.31817870951975324,
+        "test_MAE": 0.2368860766360985,
+        "test_R2": 0.9003636600693489,
+        "test_Huber": 0.04995731914776362,
+        "test_MSE": 0.10123769119165553,
+        "test_Insolvent_Accuracy": 0.978494623655914,
+        "test_Undercap_Accuracy": 0.9550342130987293,
+        "test_WellCap_Accuracy": 0.9266862170087976,
+        "test_MAPE": 57.78395353725054
+      },
+      "top_features": [
+        {
+          "feature": "ZSK1",
+          "importance": 1.5920197378548606
+        },
+        {
+          "feature": "Vola6",
+          "importance": 0.9678878595600594
+        },
+        {
+          "feature": "Vola4",
+          "importance": 0.6069252728732139
+        },
+        {
+          "feature": "Verlust7",
+          "importance": 0.5749274186404042
+        },
+        {
+          "feature": "Verlust8",
+          "importance": 0.5329790382124324
+        },
+        {
+          "feature": "ZSK2",
+          "importance": 0.32381308423298194
+        },
+        {
+          "feature": "Vola5",
+          "importance": 0.24572455090846923
+        },
+        {
+          "feature": "MR11",
+          "importance": 0.21897079815188877
+        },
+        {
+          "feature": "ZSK3",
+          "importance": 0.1645165375051722
+        },
+        {
+          "feature": "MR13",
+          "importance": 0.15197289761216665
+        }
+      ],
+      "stability_metrics": {
+        "overall_rmse": 0.31817870951975324,
+        "overall_r2": 0.9003636600693489,
+        "residual_std": 0.31809389069727106
+      }
+    },
+    "scr": {
+      "model_name": "Quadratic (Degree 2)",
+      "model_key": "quadratic",
+      "validation_rmse": 86717302.61594883,
+      "test_metrics": {
+        "test_RMSE": 99540424.67502485,
+        "test_MAE": 60836852.750026084,
+        "test_R2": 0.8904616007173498,
+        "test_Huber": 60836852.250026084,
+        "test_MSE": 9908296144484296.0,
+        "test_Insolvent_Accuracy": 1.0,
+        "test_Undercap_Accuracy": 1.0,
+        "test_WellCap_Accuracy": 1.0,
+        "test_MAPE": 9.497969357025017
+      },
+      "top_features": [
+        {
+          "feature": "ZSK1",
+          "importance": 519195248.3233333
+        },
+        {
+          "feature": "Verlust8",
+          "importance": 167845856.41388932
+        },
+        {
+          "feature": "Vola6",
+          "importance": 159502322.65328172
+        },
+        {
+          "feature": "Verlust7",
+          "importance": 152116289.14553228
+        },
+        {
+          "feature": "Vola4",
+          "importance": 124391959.38473348
+        },
+        {
+          "feature": "ZSK2",
+          "importance": 74381063.41368687
+        },
+        {
+          "feature": "MR11",
+          "importance": 69446262.98826858
+        },
+        {
+          "feature": "ZSK3",
+          "importance": 45528510.28294388
+        },
+        {
+          "feature": "Vola5",
+          "importance": 40339017.501870416
+        },
+        {
+          "feature": "MR16",
+          "importance": 38833664.72104835
+        }
+      ],
+      "stability_metrics": {
+        "overall_rmse": 99540424.67502485,
+        "overall_r2": 0.8904616007173498,
+        "residual_std": 99282015.34744847
+      }
+    },
+    "em": {
+      "model_name": "Quadratic (Degree 2)",
+      "model_key": "quadratic",
+      "validation_rmse": 156661624.0985648,
+      "test_metrics": {
+        "test_RMSE": 161070372.48945677,
+        "test_MAE": 101367532.33092435,
+        "test_R2": 0.8580112958304753,
+        "test_Huber": 101367531.83092435,
+        "test_MSE": 2.5943664893892356e+16,
+        "test_Insolvent_Accuracy": 0.9824046920821115,
+        "test_Undercap_Accuracy": 0.9824046920821115,
+        "test_WellCap_Accuracy": 0.9824046920821115,
+        "test_MAPE": 33.958651643176815
+      },
+      "top_features": [
+        {
+          "feature": "ZSK1",
+          "importance": 770416355.6551626
+        },
+        {
+          "feature": "Vola6",
+          "importance": 530764465.2594498
+        },
+        {
+          "feature": "Vola4",
+          "importance": 358066600.9551382
+        },
+        {
+          "feature": "Verlust8",
+          "importance": 212829431.7096806
+        },
+        {
+          "feature": "Verlust7",
+          "importance": 202173433.67987865
+        },
+        {
+          "feature": "ZSK2",
+          "importance": 183631445.48754865
+        },
+        {
+          "feature": "Vola5",
+          "importance": 159057541.6891371
+        },
+        {
+          "feature": "MR11",
+          "importance": 120026190.91509068
+        },
+        {
+          "feature": "MR15",
+          "importance": 102699320.02371167
+        },
+        {
+          "feature": "MR16",
+          "importance": 99403696.36376297
+        }
+      ],
+      "stability_metrics": {
+        "overall_rmse": 161070372.48945677,
+        "overall_r2": 0.8580112958304753,
+        "residual_std": 160898840.18952757
+      }
+    },
+    "multi_output": {
+      "model_name": "Quadratic (Degree 2) (Multi-Output)",
+      "model_key": "quadratic",
+      "validation_rmse": 121689463.35725681,
+      "test_metrics": {
+        "test_SCR_RMSE": 99540424.67502485,
+        "test_SCR_MAE": 60836852.750026084,
+        "test_SCR_R2": 0.8904616007173498,
+        "test_SCR_Huber": 60836852.250026084,
+        "test_SCR_MSE": 9908296144484296.0,
+        "test_SCR_Insolvent_Accuracy": 1.0,
+        "test_SCR_Undercap_Accuracy": 1.0,
+        "test_SCR_WellCap_Accuracy": 1.0,
+        "test_SCR_MAPE": 9.497969357025017,
+        "test_EM_RMSE": 161070372.48945677,
+        "test_EM_MAE": 101367532.33092435,
+        "test_EM_R2": 0.8580112958304753,
+        "test_EM_Huber": 101367531.83092435,
+        "test_EM_MSE": 2.5943664893892356e+16,
+        "test_EM_Insolvent_Accuracy": 0.9824046920821115,
+        "test_EM_Undercap_Accuracy": 0.9824046920821115,
+        "test_EM_WellCap_Accuracy": 0.9824046920821115,
+        "test_EM_MAPE": 33.958651643176815,
+        "test_RMSE_macro": 130305398.58224082
+      }
+    }
+  },
+  "model_comparisons": {
+    "quote": [
+      {
+        "Model": "Quadratic (Degree 2)",
+        "CV_RMSE_Mean": 0.3137630029561305,
+        "CV_RMSE_Std": 0.014885894421312527,
+        "Val_RMSE": 0.32082065886285255,
+        "Val_MAE": 0.23876567329920817,
+        "Val_R2": 0.8982277176087978,
+        "Test_RMSE": 0.31817870951975324,
+        "Test_MAE": 0.2368860766360985,
+        "Test_R2": 0.9003636600693489
+      },
+      {
+        "Model": "Cubic (Degree 3)",
+        "CV_RMSE_Mean": 0.5721068188588806,
+        "CV_RMSE_Std": 0.026675643470732386,
+        "Val_RMSE": 0.5645191824642827,
+        "Val_MAE": 0.32487859876774045,
+        "Val_R2": 0.6848899392949868,
+        "Test_RMSE": 0.4741134244996501,
+        "Test_MAE": 0.29645583708544926,
+        "Test_R2": 0.7787720278093659
+      },
+      {
+        "Model": "Lasso with CV",
+        "CV_RMSE_Mean": 0.5800442115888146,
+        "CV_RMSE_Std": 0.026728792062797605,
+        "Val_RMSE": 0.5812602248500396,
+        "Val_MAE": 0.45849141490836987,
+        "Val_R2": 0.665923387993141,
+        "Test_RMSE": 0.5692512117206546,
+        "Test_MAE": 0.4529277323789006,
+        "Test_R2": 0.681078747538762
+      },
+      {
+        "Model": "Ridge with CV",
+        "CV_RMSE_Mean": 0.5800169149328867,
+        "CV_RMSE_Std": 0.02673290312231012,
+        "Val_RMSE": 0.5812962926819087,
+        "Val_MAE": 0.4582885765398062,
+        "Val_R2": 0.6658819270694516,
+        "Test_RMSE": 0.5691793650219247,
+        "Test_MAE": 0.4527330607351955,
+        "Test_R2": 0.6811592462454474
+      },
+      {
+        "Model": "Elastic Net",
+        "CV_RMSE_Mean": 0.5800131335377458,
+        "CV_RMSE_Std": 0.0267438496314027,
+        "Val_RMSE": 0.5812976126414438,
+        "Val_MAE": 0.4582229956167745,
+        "Val_R2": 0.6658804096923672,
+        "Test_RMSE": 0.569156235249329,
+        "Test_MAE": 0.45266715796015433,
+        "Test_R2": 0.6811851592167828
+      },
+      {
+        "Model": "Linear Regression (MSE)",
+        "CV_RMSE_Mean": 0.5800148996362224,
+        "CV_RMSE_Std": 0.026755846984235023,
+        "Val_RMSE": 0.5813024609169138,
+        "Val_MAE": 0.4581125121650096,
+        "Val_R2": 0.6658748362630812,
+        "Test_RMSE": 0.5691185577462627,
+        "Test_MAE": 0.4525580183442508,
+        "Test_R2": 0.6812273681878946
+      },
+      {
+        "Model": "Linear Regression (MAE)",
+        "CV_RMSE_Mean": 0.5800148996362224,
+        "CV_RMSE_Std": 0.026755846984235023,
+        "Val_RMSE": 0.5813024609169138,
+        "Val_MAE": 0.4581125121650096,
+        "Val_R2": 0.6658748362630812,
+        "Test_RMSE": 0.5691185577462627,
+        "Test_MAE": 0.4525580183442508,
+        "Test_R2": 0.6812273681878946
+      },
+      {
+        "Model": "Dummy Regressor",
+        "CV_RMSE_Mean": 1.0039898615830116,
+        "CV_RMSE_Std": 0.015329970590919822,
+        "Val_RMSE": 1.0056740206789412,
+        "Val_MAE": 0.8302191332873742,
+        "Val_R2": -4.449625133617907e-05,
+        "Test_RMSE": 1.008012913742797,
+        "Test_MAE": 0.8390746636622088,
+        "Test_R2": -1.7788466128099145e-05
+      }
+    ],
+    "scr": [
+      {
+        "Model": "Quadratic (Degree 2)",
+        "CV_RMSE_Mean": 86257931.94937591,
+        "CV_RMSE_Std": 4175925.742414844,
+        "Val_RMSE": 86717302.61594883,
+        "Val_MAE": 59266242.37057719,
+        "Val_R2": 0.9130228222412357,
+        "Test_RMSE": 99540424.67502485,
+        "Test_MAE": 60836852.750026084,
+        "Test_R2": 0.8904616007173498
+      },
+      {
+        "Model": "Cubic (Degree 3)",
+        "CV_RMSE_Mean": 138564543.60257658,
+        "CV_RMSE_Std": 8463328.266378803,
+        "Val_RMSE": 147450410.0539565,
+        "Val_MAE": 77840429.52104168,
+        "Val_R2": 0.7485302442830108,
+        "Test_RMSE": 126563027.75352505,
+        "Test_MAE": 72256380.00861792,
+        "Test_R2": 0.8229152660395451
+      },
+      {
+        "Model": "Linear Regression (MSE)",
+        "CV_RMSE_Mean": 147067002.91980377,
+        "CV_RMSE_Std": 5125860.510413828,
+        "Val_RMSE": 147467293.1234872,
+        "Val_MAE": 111496292.9010987,
+        "Val_R2": 0.7484726544203772,
+        "Test_RMSE": 156343225.60118067,
+        "Test_MAE": 114595360.8729334,
+        "Test_R2": 0.7297749863932566
+      },
+      {
+        "Model": "Linear Regression (MAE)",
+        "CV_RMSE_Mean": 147067002.91980377,
+        "CV_RMSE_Std": 5125860.510413828,
+        "Val_RMSE": 147467293.1234872,
+        "Val_MAE": 111496292.9010987,
+        "Val_R2": 0.7484726544203772,
+        "Test_RMSE": 156343225.60118067,
+        "Test_MAE": 114595360.8729334,
+        "Test_R2": 0.7297749863932566
+      },
+      {
+        "Model": "Lasso with CV",
+        "CV_RMSE_Mean": 147067003.4301942,
+        "CV_RMSE_Std": 5125860.446805717,
+        "Val_RMSE": 147467293.5549158,
+        "Val_MAE": 111496290.43291715,
+        "Val_R2": 0.7484726529486465,
+        "Test_RMSE": 156343226.27099413,
+        "Test_MAE": 114595358.52806407,
+        "Test_R2": 0.7297749840778334
+      },
+      {
+        "Model": "Elastic Net",
+        "CV_RMSE_Mean": 147066424.65784544,
+        "CV_RMSE_Std": 5124963.7783685215,
+        "Val_RMSE": 147474222.58497465,
+        "Val_MAE": 111480834.85327345,
+        "Val_R2": 0.7484490154158531,
+        "Test_RMSE": 156358637.17098168,
+        "Test_MAE": 114581805.88238086,
+        "Test_R2": 0.7297217087804151
+      },
+      {
+        "Model": "Ridge with CV",
+        "CV_RMSE_Mean": 147065800.90666556,
+        "CV_RMSE_Std": 5123496.253107014,
+        "Val_RMSE": 147478797.98549303,
+        "Val_MAE": 111471475.19477172,
+        "Val_R2": 0.7484334063915884,
+        "Test_RMSE": 156368516.89746213,
+        "Test_MAE": 114573385.28385435,
+        "Test_R2": 0.7296875519215218
+      },
+      {
+        "Model": "Dummy Regressor",
+        "CV_RMSE_Mean": 290194185.77133393,
+        "CV_RMSE_Std": 5212121.010658558,
+        "Val_RMSE": 294037993.4618058,
+        "Val_MAE": 233791908.4727757,
+        "Val_R2": -1.5921776967964263e-06,
+        "Test_RMSE": 300807425.72462493,
+        "Test_MAE": 235286908.6278979,
+        "Test_R2": -0.0003328196709082576
+      }
+    ],
+    "em": [
+      {
+        "Model": "Quadratic (Degree 2)",
+        "CV_RMSE_Mean": 156971022.82191533,
+        "CV_RMSE_Std": 10337086.72233985,
+        "Val_RMSE": 156661624.0985648,
+        "Val_MAE": 99572287.01275301,
+        "Val_R2": 0.8698290109663196,
+        "Test_RMSE": 161070372.48945677,
+        "Test_MAE": 101367532.33092435,
+        "Test_R2": 0.8580112958304753
+      },
+      {
+        "Model": "Linear Regression (MSE)",
+        "CV_RMSE_Mean": 329434714.30728006,
+        "CV_RMSE_Std": 23085815.34458866,
+        "Val_RMSE": 323861452.06677026,
+        "Val_MAE": 232260800.1954676,
+        "Val_R2": 0.4437020326730904,
+        "Test_RMSE": 321760820.1822277,
+        "Test_MAE": 230798404.83798945,
+        "Test_R2": 0.43338405695870363
+      },
+      {
+        "Model": "Linear Regression (MAE)",
+        "CV_RMSE_Mean": 329434714.30728006,
+        "CV_RMSE_Std": 23085815.34458866,
+        "Val_RMSE": 323861452.06677026,
+        "Val_MAE": 232260800.1954676,
+        "Val_R2": 0.4437020326730904,
+        "Test_RMSE": 321760820.1822277,
+        "Test_MAE": 230798404.83798945,
+        "Test_R2": 0.43338405695870363
+      },
+      {
+        "Model": "Lasso with CV",
+        "CV_RMSE_Mean": 329434713.86051047,
+        "CV_RMSE_Std": 23085816.252709955,
+        "Val_RMSE": 323861454.70188427,
+        "Val_MAE": 232260798.6268611,
+        "Val_R2": 0.4437020236204008,
+        "Test_RMSE": 321760821.4330855,
+        "Test_MAE": 230798401.55433035,
+        "Test_R2": 0.4333840525532202
+      },
+      {
+        "Model": "Ridge with CV",
+        "CV_RMSE_Mean": 329436389.60438025,
+        "CV_RMSE_Std": 23160776.22869635,
+        "Val_RMSE": 323866542.2544383,
+        "Val_MAE": 232211754.1509862,
+        "Val_R2": 0.443684545668769,
+        "Test_RMSE": 321764160.43604076,
+        "Test_MAE": 230744245.45297277,
+        "Test_R2": 0.4333722926246425
+      },
+      {
+        "Model": "Elastic Net",
+        "CV_RMSE_Mean": 329425008.8764113,
+        "CV_RMSE_Std": 23114477.071195766,
+        "Val_RMSE": 323887838.43866557,
+        "Val_MAE": 232055998.99208465,
+        "Val_R2": 0.4436113810507727,
+        "Test_RMSE": 321779558.2224988,
+        "Test_MAE": 230568729.9419345,
+        "Test_R2": 0.43331806022543884
+      },
+      {
+        "Model": "Cubic (Degree 3)",
+        "CV_RMSE_Mean": 327873944.03299516,
+        "CV_RMSE_Std": 24703383.688144494,
+        "Val_RMSE": 333624102.2058432,
+        "Val_MAE": 141421430.4897097,
+        "Val_R2": 0.40965785120594655,
+        "Test_RMSE": 270108717.01871055,
+        "Test_MAE": 125795646.86127794,
+        "Test_R2": 0.6006996693645511
+      },
+      {
+        "Model": "Dummy Regressor",
+        "CV_RMSE_Mean": 435014044.1446091,
+        "CV_RMSE_Std": 21891458.346386723,
+        "Val_RMSE": 434271894.3875369,
+        "Val_MAE": 300961411.56123704,
+        "Val_R2": -0.00025884856153468583,
+        "Test_RMSE": 427478325.8537896,
+        "Test_MAE": 296912709.14894,
+        "Test_R2": -0.00011667744089605137
+      }
+    ],
+    "multi_output": [
+      {
+        "Model": "Quadratic (Degree 2) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 121689463.35725681,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 130305398.58224082,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Linear Regression (MSE) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 235664372.59512872,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 239052022.89170417,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Linear Regression (MAE) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 235664372.59512872,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 239052022.89170417,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Lasso with CV (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 235664374.12840003,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 239052023.8520398,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Ridge with CV (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 235672670.11996567,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 239066338.66675144,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Elastic Net (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 235692609.67650384,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 239098435.15359226,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Cubic (Degree 3) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 240537256.12989986,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 198335872.38611782,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      },
+      {
+        "Model": "Dummy Regressor (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE": 364154943.92467135,
+        "Val_MAE": NaN,
+        "Val_R2": NaN,
+        "Test_RMSE": 364142875.7892073,
+        "Test_MAE": NaN,
+        "Test_R2": NaN
+      }
+    ]
+  }
+}
