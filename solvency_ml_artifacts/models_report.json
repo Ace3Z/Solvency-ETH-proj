@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-08-13T22:30:30.375529",
+  "timestamp": "2025-08-18T17:50:17.001492",
   "data_shape": [
-    10230,
-    27
+    9920,
+    30
   ],
   "feature_columns": [
     "ZSK1",
@@ -32,231 +32,258 @@
     "Quote"
   ],
   "regulatory_distribution": {
-    "insolvent": 272,
-    "undercapitalized": 1654,
-    "well_capitalized": 6499,
-    "total": 10230
+    "insolvent": 2886,
+    "undercapitalized": 9920,
+    "well_capitalized": 0,
+    "total": 9920
   },
   "train_test_split": {
-    "train_size": 6138,
-    "val_size": 2046,
-    "test_size": 2046,
+    "train_size": 5952,
+    "val_size": 1984,
+    "test_size": 1984,
     "random_state": 8
   },
   "best_models": {
     "quote": {
       "model_name": "Quadratic (Degree 2)",
       "model_key": "quadratic",
-      "validation_rmse": 0.32082065886285255,
+      "validation_rmse": 0.15111413438261068,
       "test_metrics": {
-        "test_RMSE": 0.31817870951975324,
-        "test_MAE": 0.2368860766360985,
-        "test_R2": 0.9003636600693489,
-        "test_Huber": 0.04995731914776362,
-        "test_MSE": 0.10123769119165553,
-        "test_Insolvent_Accuracy": 0.978494623655914,
-        "test_Undercap_Accuracy": 0.9550342130987293,
-        "test_WellCap_Accuracy": 0.9266862170087976,
-        "test_MAPE": 57.78395353725054
+        "test_norm_RMSE": 0.1520483757839534,
+        "test_norm_MAE": 0.11654158492994163,
+        "test_norm_R2": 0.8974182234112407,
+        "test_norm_Huber": 0.011559354289269151,
+        "test_norm_MSE": 0.023118708578538302,
+        "test_norm_Insolvent_Accuracy": 0.9324596774193549,
+        "test_norm_Undercap_Accuracy": 0.9984879032258065,
+        "test_norm_WellCap_Accuracy": 1.0,
+        "test_norm_MAPE": 75.75508777567687,
+        "test_orig_RMSE": 0.30531588357609,
+        "test_orig_MAE": 0.23401760652018921,
+        "test_orig_R2": 0.8974182234112407,
+        "test_orig_Huber": 0.04654145831744635,
+        "test_orig_MSE": 0.09321778876384856,
+        "test_orig_Insolvent_Accuracy": 0.9803427419354839,
+        "test_orig_Undercap_Accuracy": 0.9601814516129032,
+        "test_orig_WellCap_Accuracy": 0.9410282258064516,
+        "test_orig_MAPE": 71.04761443968695
       },
       "top_features": [
         {
           "feature": "ZSK1",
-          "importance": 1.5920197378548606
+          "importance": 0.805934099407516
         },
         {
           "feature": "Vola6",
-          "importance": 0.9678878595600594
+          "importance": 0.47912013594362113
         },
         {
           "feature": "Vola4",
-          "importance": 0.6069252728732139
-        },
-        {
-          "feature": "Verlust7",
-          "importance": 0.5749274186404042
+          "importance": 0.28578462898358337
         },
         {
           "feature": "Verlust8",
-          "importance": 0.5329790382124324
+          "importance": 0.27753763022589845
+        },
+        {
+          "feature": "Verlust7",
+          "importance": 0.24448487942605607
         },
         {
           "feature": "ZSK2",
-          "importance": 0.32381308423298194
+          "importance": 0.17705621367232333
         },
         {
           "feature": "Vola5",
-          "importance": 0.24572455090846923
+          "importance": 0.1089913524596724
         },
         {
           "feature": "MR11",
-          "importance": 0.21897079815188877
+          "importance": 0.1011821480971148
         },
         {
           "feature": "ZSK3",
-          "importance": 0.1645165375051722
+          "importance": 0.08908027467963837
         },
         {
-          "feature": "MR13",
-          "importance": 0.15197289761216665
+          "feature": "MR14",
+          "importance": 0.07150587594743825
         }
       ],
       "stability_metrics": {
-        "overall_rmse": 0.31817870951975324,
-        "overall_r2": 0.9003636600693489,
-        "residual_std": 0.31809389069727106
+        "overall_rmse": 0.1520483757839534,
+        "overall_r2": 0.8974182234112407,
+        "residual_std": 0.15194842060629402
       }
     },
     "scr": {
       "model_name": "Quadratic (Degree 2)",
       "model_key": "quadratic",
-      "validation_rmse": 86717302.61594883,
+      "validation_rmse": 0.0907566793018699,
       "test_metrics": {
-        "test_RMSE": 99540424.67502485,
-        "test_MAE": 60836852.750026084,
-        "test_R2": 0.8904616007173498,
-        "test_Huber": 60836852.250026084,
-        "test_MSE": 9908296144484296.0,
-        "test_Insolvent_Accuracy": 1.0,
-        "test_Undercap_Accuracy": 1.0,
-        "test_WellCap_Accuracy": 1.0,
-        "test_MAPE": 9.497969357025017
+        "test_norm_RMSE": 0.09236752043163617,
+        "test_norm_MAE": 0.06649283712332973,
+        "test_norm_R2": 0.9122406808707066,
+        "test_norm_Huber": 0.004265879415344362,
+        "test_norm_MSE": 0.008531758830688725,
+        "test_norm_Insolvent_Accuracy": 0.96875,
+        "test_norm_Undercap_Accuracy": 1.0,
+        "test_norm_WellCap_Accuracy": 1.0,
+        "test_norm_MAPE": 40.33632932119253,
+        "test_orig_RMSE": 82099461.16665426,
+        "test_orig_MAE": 59101143.711093314,
+        "test_orig_R2": 0.9122406808707066,
+        "test_orig_Huber": 59101143.211093314,
+        "test_orig_MSE": 6740321523854970.0,
+        "test_orig_Insolvent_Accuracy": 1.0,
+        "test_orig_Undercap_Accuracy": 1.0,
+        "test_orig_WellCap_Accuracy": 1.0,
+        "test_orig_MAPE": 10.15394432072993
       },
       "top_features": [
         {
           "feature": "ZSK1",
-          "importance": 519195248.3233333
-        },
-        {
-          "feature": "Verlust8",
-          "importance": 167845856.41388932
+          "importance": 0.5857161204958944
         },
         {
           "feature": "Vola6",
-          "importance": 159502322.65328172
+          "importance": 0.1918997011688796
+        },
+        {
+          "feature": "Verlust8",
+          "importance": 0.1818458062491999
         },
         {
           "feature": "Verlust7",
-          "importance": 152116289.14553228
+          "importance": 0.17734881486796963
         },
         {
           "feature": "Vola4",
-          "importance": 124391959.38473348
+          "importance": 0.13572505074304378
         },
         {
           "feature": "ZSK2",
-          "importance": 74381063.41368687
+          "importance": 0.09207539893315687
         },
         {
           "feature": "MR11",
-          "importance": 69446262.98826858
+          "importance": 0.07985698630700203
         },
         {
           "feature": "ZSK3",
-          "importance": 45528510.28294388
+          "importance": 0.06568566647077678
         },
         {
           "feature": "Vola5",
-          "importance": 40339017.501870416
+          "importance": 0.04959702920021401
         },
         {
-          "feature": "MR16",
-          "importance": 38833664.72104835
+          "feature": "MR9",
+          "importance": 0.042305901184177236
         }
       ],
       "stability_metrics": {
-        "overall_rmse": 99540424.67502485,
-        "overall_r2": 0.8904616007173498,
-        "residual_std": 99282015.34744847
+        "overall_rmse": 0.09236752043163617,
+        "overall_r2": 0.9122406808707066,
+        "residual_std": 0.0922842911709987
       }
     },
     "em": {
       "model_name": "Quadratic (Degree 2)",
       "model_key": "quadratic",
-      "validation_rmse": 156661624.0985648,
+      "validation_rmse": 0.10888698742017046,
       "test_metrics": {
-        "test_RMSE": 161070372.48945677,
-        "test_MAE": 101367532.33092435,
-        "test_R2": 0.8580112958304753,
-        "test_Huber": 101367531.83092435,
-        "test_MSE": 2.5943664893892356e+16,
-        "test_Insolvent_Accuracy": 0.9824046920821115,
-        "test_Undercap_Accuracy": 0.9824046920821115,
-        "test_WellCap_Accuracy": 0.9824046920821115,
-        "test_MAPE": 33.958651643176815
+        "test_norm_RMSE": 0.10873435951010595,
+        "test_norm_MAE": 0.0735789728554256,
+        "test_norm_R2": 0.8869200094226046,
+        "test_norm_Huber": 0.005911580469036484,
+        "test_norm_MSE": 0.011823160938072967,
+        "test_norm_Insolvent_Accuracy": 0.9647177419354839,
+        "test_norm_Undercap_Accuracy": 0.9964717741935484,
+        "test_norm_WellCap_Accuracy": 1.0,
+        "test_norm_MAPE": 57.124713678423845,
+        "test_orig_RMSE": 122798842.62610959,
+        "test_orig_MAE": 83096205.73453079,
+        "test_orig_R2": 0.8869200094226046,
+        "test_orig_Huber": 83096205.23453079,
+        "test_orig_MSE": 1.507955575031203e+16,
+        "test_orig_Insolvent_Accuracy": 0.9884072580645161,
+        "test_orig_Undercap_Accuracy": 0.9884072580645161,
+        "test_orig_WellCap_Accuracy": 0.9884072580645161,
+        "test_orig_MAPE": 28.37153592821759
       },
       "top_features": [
         {
           "feature": "ZSK1",
-          "importance": 770416355.6551626
+          "importance": 0.579245158399865
         },
         {
           "feature": "Vola6",
-          "importance": 530764465.2594498
+          "importance": 0.420333936714782
         },
         {
           "feature": "Vola4",
-          "importance": 358066600.9551382
-        },
-        {
-          "feature": "Verlust8",
-          "importance": 212829431.7096806
+          "importance": 0.2691875926275721
         },
         {
           "feature": "Verlust7",
-          "importance": 202173433.67987865
+          "importance": 0.15111898530621778
+        },
+        {
+          "feature": "Verlust8",
+          "importance": 0.15027325901455083
         },
         {
           "feature": "ZSK2",
-          "importance": 183631445.48754865
+          "importance": 0.1391247991495663
         },
         {
           "feature": "Vola5",
-          "importance": 159057541.6891371
+          "importance": 0.0879471580916242
         },
         {
-          "feature": "MR11",
-          "importance": 120026190.91509068
-        },
-        {
-          "feature": "MR15",
-          "importance": 102699320.02371167
+          "feature": "MR9",
+          "importance": 0.07094392976525976
         },
         {
           "feature": "MR16",
-          "importance": 99403696.36376297
+          "importance": 0.06884925749774783
+        },
+        {
+          "feature": "MR11",
+          "importance": 0.06878845754006724
         }
       ],
       "stability_metrics": {
-        "overall_rmse": 161070372.48945677,
-        "overall_r2": 0.8580112958304753,
-        "residual_std": 160898840.18952757
+        "overall_rmse": 0.10873435951010595,
+        "overall_r2": 0.8869200094226046,
+        "residual_std": 0.10872404093877434
       }
     },
     "multi_output": {
       "model_name": "Quadratic (Degree 2) (Multi-Output)",
       "model_key": "quadratic",
-      "validation_rmse": 121689463.35725681,
+      "validation_rmse": 0.09982183336102018,
       "test_metrics": {
-        "test_SCR_RMSE": 99540424.67502485,
-        "test_SCR_MAE": 60836852.750026084,
-        "test_SCR_R2": 0.8904616007173498,
-        "test_SCR_Huber": 60836852.250026084,
-        "test_SCR_MSE": 9908296144484296.0,
-        "test_SCR_Insolvent_Accuracy": 1.0,
+        "test_SCR_RMSE": 0.09236752043163617,
+        "test_SCR_MAE": 0.06649283712332973,
+        "test_SCR_R2": 0.9122406808707066,
+        "test_SCR_Huber": 0.004265879415344362,
+        "test_SCR_MSE": 0.008531758830688725,
+        "test_SCR_Insolvent_Accuracy": 0.96875,
         "test_SCR_Undercap_Accuracy": 1.0,
         "test_SCR_WellCap_Accuracy": 1.0,
-        "test_SCR_MAPE": 9.497969357025017,
-        "test_EM_RMSE": 161070372.48945677,
-        "test_EM_MAE": 101367532.33092435,
-        "test_EM_R2": 0.8580112958304753,
-        "test_EM_Huber": 101367531.83092435,
-        "test_EM_MSE": 2.5943664893892356e+16,
-        "test_EM_Insolvent_Accuracy": 0.9824046920821115,
-        "test_EM_Undercap_Accuracy": 0.9824046920821115,
-        "test_EM_WellCap_Accuracy": 0.9824046920821115,
-        "test_EM_MAPE": 33.958651643176815,
-        "test_RMSE_macro": 130305398.58224082
+        "test_SCR_MAPE": 40.33632932119253,
+        "test_EM_RMSE": 0.10873435951010595,
+        "test_EM_MAE": 0.0735789728554256,
+        "test_EM_R2": 0.8869200094226046,
+        "test_EM_Huber": 0.005911580469036484,
+        "test_EM_MSE": 0.011823160938072967,
+        "test_EM_Insolvent_Accuracy": 0.9647177419354839,
+        "test_EM_Undercap_Accuracy": 0.9964717741935484,
+        "test_EM_WellCap_Accuracy": 1.0,
+        "test_EM_MAPE": 57.124713678423845,
+        "test_RMSE_macro": 0.10055093997087106
       }
     }
   },
@@ -264,271 +291,367 @@
     "quote": [
       {
         "Model": "Quadratic (Degree 2)",
-        "CV_RMSE_Mean": 0.3137630029561305,
-        "CV_RMSE_Std": 0.014885894421312527,
-        "Val_RMSE": 0.32082065886285255,
-        "Val_MAE": 0.23876567329920817,
-        "Val_R2": 0.8982277176087978,
-        "Test_RMSE": 0.31817870951975324,
-        "Test_MAE": 0.2368860766360985,
-        "Test_R2": 0.9003636600693489
+        "CV_RMSE_Mean": 0.14912155755300618,
+        "CV_RMSE_Std": 0.004196888163500339,
+        "Val_RMSE_Norm": 0.15111413438261068,
+        "Val_MAE_Norm": 0.11301506114111763,
+        "Val_R2_Norm": 0.8978048378471608,
+        "Test_RMSE_Norm": 0.1520483757839534,
+        "Test_MAE_Norm": 0.11654158492994163,
+        "Test_R2_Norm": 0.8974182234112407,
+        "Val_RMSE_Orig": 0.3034399099758879,
+        "Val_MAE_Orig": 0.22693628308621316,
+        "Test_RMSE_Orig": 0.30531588357609,
+        "Test_MAE_Orig": 0.23401760652018921
       },
       {
         "Model": "Cubic (Degree 3)",
-        "CV_RMSE_Mean": 0.5721068188588806,
-        "CV_RMSE_Std": 0.026675643470732386,
-        "Val_RMSE": 0.5645191824642827,
-        "Val_MAE": 0.32487859876774045,
-        "Val_R2": 0.6848899392949868,
-        "Test_RMSE": 0.4741134244996501,
-        "Test_MAE": 0.29645583708544926,
-        "Test_R2": 0.7787720278093659
+        "CV_RMSE_Mean": 0.2727600389718058,
+        "CV_RMSE_Std": 0.020653263715991882,
+        "Val_RMSE_Norm": 0.261837059031954,
+        "Val_MAE_Norm": 0.15323767786351486,
+        "Val_R2_Norm": 0.693180901035514,
+        "Test_RMSE_Norm": 0.26054318949364325,
+        "Test_MAE_Norm": 0.15678051086529649,
+        "Test_R2_Norm": 0.6987922816060934,
+        "Val_RMSE_Orig": 0.5257735416055839,
+        "Val_MAE_Orig": 0.3077040236228876,
+        "Test_RMSE_Orig": 0.5231754282138115,
+        "Test_MAE_Orig": 0.3148180962509206
       },
       {
         "Model": "Lasso with CV",
-        "CV_RMSE_Mean": 0.5800442115888146,
-        "CV_RMSE_Std": 0.026728792062797605,
-        "Val_RMSE": 0.5812602248500396,
-        "Val_MAE": 0.45849141490836987,
-        "Val_R2": 0.665923387993141,
-        "Test_RMSE": 0.5692512117206546,
-        "Test_MAE": 0.4529277323789006,
-        "Test_R2": 0.681078747538762
+        "CV_RMSE_Mean": 0.2775111404164831,
+        "CV_RMSE_Std": 0.004334606797741435,
+        "Val_RMSE_Norm": 0.2919005176073467,
+        "Val_MAE_Norm": 0.22958516287297548,
+        "Val_R2_Norm": 0.6186797300711849,
+        "Test_RMSE_Norm": 0.2787025244693286,
+        "Test_MAE_Norm": 0.22393679413322085,
+        "Test_R2_Norm": 0.6553419307644772,
+        "Val_RMSE_Orig": 0.5861415091749416,
+        "Val_MAE_Orig": 0.4610111518594776,
+        "Test_RMSE_Orig": 0.5596397006841308,
+        "Test_MAE_Orig": 0.44966912545735305
       },
       {
         "Model": "Ridge with CV",
-        "CV_RMSE_Mean": 0.5800169149328867,
-        "CV_RMSE_Std": 0.02673290312231012,
-        "Val_RMSE": 0.5812962926819087,
-        "Val_MAE": 0.4582885765398062,
-        "Val_R2": 0.6658819270694516,
-        "Test_RMSE": 0.5691793650219247,
-        "Test_MAE": 0.4527330607351955,
-        "Test_R2": 0.6811592462454474
+        "CV_RMSE_Mean": 0.2775008335623306,
+        "CV_RMSE_Std": 0.004328395027419327,
+        "Val_RMSE_Norm": 0.29207508162103957,
+        "Val_MAE_Norm": 0.22939724636609815,
+        "Val_R2_Norm": 0.6182235150490475,
+        "Test_RMSE_Norm": 0.27862740426674626,
+        "Test_MAE_Norm": 0.22363405813456913,
+        "Test_R2_Norm": 0.6555277008416605,
+        "Val_RMSE_Orig": 0.5864920368659242,
+        "Val_MAE_Orig": 0.46063381212112153,
+        "Test_RMSE_Orig": 0.5594888579611647,
+        "Test_MAE_Orig": 0.44906122610662297
       },
       {
         "Model": "Elastic Net",
-        "CV_RMSE_Mean": 0.5800131335377458,
-        "CV_RMSE_Std": 0.0267438496314027,
-        "Val_RMSE": 0.5812976126414438,
-        "Val_MAE": 0.4582229956167745,
-        "Val_R2": 0.6658804096923672,
-        "Test_RMSE": 0.569156235249329,
-        "Test_MAE": 0.45266715796015433,
-        "Test_R2": 0.6811851592167828
+        "CV_RMSE_Mean": 0.2775019056541128,
+        "CV_RMSE_Std": 0.004332386069697899,
+        "Val_RMSE_Norm": 0.29209734422951134,
+        "Val_MAE_Norm": 0.22938175012936307,
+        "Val_R2_Norm": 0.6181653131354827,
+        "Test_RMSE_Norm": 0.2786317284940273,
+        "Test_MAE_Norm": 0.2236041996377075,
+        "Test_R2_Norm": 0.6555170085116908,
+        "Val_RMSE_Orig": 0.5865367405856531,
+        "Val_MAE_Orig": 0.46060269539799653,
+        "Test_RMSE_Orig": 0.5594975410876122,
+        "Test_MAE_Orig": 0.44900126970587506
       },
       {
         "Model": "Linear Regression (MSE)",
-        "CV_RMSE_Mean": 0.5800148996362224,
-        "CV_RMSE_Std": 0.026755846984235023,
-        "Val_RMSE": 0.5813024609169138,
-        "Val_MAE": 0.4581125121650096,
-        "Val_R2": 0.6658748362630812,
-        "Test_RMSE": 0.5691185577462627,
-        "Test_MAE": 0.4525580183442508,
-        "Test_R2": 0.6812273681878946
+        "CV_RMSE_Mean": 0.2775031261397484,
+        "CV_RMSE_Std": 0.0043367162511637625,
+        "Val_RMSE_Norm": 0.2921369962287318,
+        "Val_MAE_Norm": 0.22935612954565532,
+        "Val_R2_Norm": 0.6180616385443818,
+        "Test_RMSE_Norm": 0.27863878409860754,
+        "Test_MAE_Norm": 0.22355400203198367,
+        "Test_R2_Norm": 0.6554995620668145,
+        "Val_RMSE_Orig": 0.5866163625159443,
+        "Val_MAE_Orig": 0.46055124880337067,
+        "Test_RMSE_Orig": 0.5595117088689876,
+        "Test_MAE_Orig": 0.44890047200734023
       },
       {
         "Model": "Linear Regression (MAE)",
-        "CV_RMSE_Mean": 0.5800148996362224,
-        "CV_RMSE_Std": 0.026755846984235023,
-        "Val_RMSE": 0.5813024609169138,
-        "Val_MAE": 0.4581125121650096,
-        "Val_R2": 0.6658748362630812,
-        "Test_RMSE": 0.5691185577462627,
-        "Test_MAE": 0.4525580183442508,
-        "Test_R2": 0.6812273681878946
+        "CV_RMSE_Mean": 0.2775031261397484,
+        "CV_RMSE_Std": 0.0043367162511637625,
+        "Val_RMSE_Norm": 0.2921369962287318,
+        "Val_MAE_Norm": 0.22935612954565532,
+        "Val_R2_Norm": 0.6180616385443818,
+        "Test_RMSE_Norm": 0.27863878409860754,
+        "Test_MAE_Norm": 0.22355400203198367,
+        "Test_R2_Norm": 0.6554995620668145,
+        "Val_RMSE_Orig": 0.5866163625159443,
+        "Val_MAE_Orig": 0.46055124880337067,
+        "Test_RMSE_Orig": 0.5595117088689876,
+        "Test_MAE_Orig": 0.44890047200734023
       },
       {
         "Model": "Dummy Regressor",
-        "CV_RMSE_Mean": 1.0039898615830116,
-        "CV_RMSE_Std": 0.015329970590919822,
-        "Val_RMSE": 1.0056740206789412,
-        "Val_MAE": 0.8302191332873742,
-        "Val_R2": -4.449625133617907e-05,
-        "Test_RMSE": 1.008012913742797,
-        "Test_MAE": 0.8390746636622088,
-        "Test_R2": -1.7788466128099145e-05
+        "CV_RMSE_Mean": 0.47896885130605754,
+        "CV_RMSE_Std": 0.005537984414803811,
+        "Val_RMSE_Norm": 0.47278078969854526,
+        "Val_MAE_Norm": 0.3940331695854004,
+        "Val_R2_Norm": -0.0003219648376180384,
+        "Test_RMSE_Norm": 0.47538912193563926,
+        "Test_MAE_Norm": 0.40169132158944454,
+        "Test_R2_Norm": -0.0027787570869930445,
+        "Val_RMSE_Orig": 0.9493523610519675,
+        "Val_MAE_Orig": 0.7912257181963948,
+        "Test_RMSE_Orig": 0.9545899392735193,
+        "Test_MAE_Orig": 0.8066034256767894
       }
     ],
     "scr": [
       {
         "Model": "Quadratic (Degree 2)",
-        "CV_RMSE_Mean": 86257931.94937591,
-        "CV_RMSE_Std": 4175925.742414844,
-        "Val_RMSE": 86717302.61594883,
-        "Val_MAE": 59266242.37057719,
-        "Val_R2": 0.9130228222412357,
-        "Test_RMSE": 99540424.67502485,
-        "Test_MAE": 60836852.750026084,
-        "Test_R2": 0.8904616007173498
+        "CV_RMSE_Mean": 0.09883797948715396,
+        "CV_RMSE_Std": 0.005489029847144009,
+        "Val_RMSE_Norm": 0.0907566793018699,
+        "Val_MAE_Norm": 0.06455135616423122,
+        "Val_R2_Norm": 0.9172133610361448,
+        "Test_RMSE_Norm": 0.09236752043163617,
+        "Test_MAE_Norm": 0.06649283712332973,
+        "Test_R2_Norm": 0.9122406808707066,
+        "Val_RMSE_Orig": 80667689.60711804,
+        "Val_MAE_Orig": 57375487.98424849,
+        "Test_RMSE_Orig": 82099461.16665426,
+        "Test_MAE_Orig": 59101143.711093314
       },
       {
         "Model": "Cubic (Degree 3)",
-        "CV_RMSE_Mean": 138564543.60257658,
-        "CV_RMSE_Std": 8463328.266378803,
-        "Val_RMSE": 147450410.0539565,
-        "Val_MAE": 77840429.52104168,
-        "Val_R2": 0.7485302442830108,
-        "Test_RMSE": 126563027.75352505,
-        "Test_MAE": 72256380.00861792,
-        "Test_R2": 0.8229152660395451
-      },
-      {
-        "Model": "Linear Regression (MSE)",
-        "CV_RMSE_Mean": 147067002.91980377,
-        "CV_RMSE_Std": 5125860.510413828,
-        "Val_RMSE": 147467293.1234872,
-        "Val_MAE": 111496292.9010987,
-        "Val_R2": 0.7484726544203772,
-        "Test_RMSE": 156343225.60118067,
-        "Test_MAE": 114595360.8729334,
-        "Test_R2": 0.7297749863932566
-      },
-      {
-        "Model": "Linear Regression (MAE)",
-        "CV_RMSE_Mean": 147067002.91980377,
-        "CV_RMSE_Std": 5125860.510413828,
-        "Val_RMSE": 147467293.1234872,
-        "Val_MAE": 111496292.9010987,
-        "Val_R2": 0.7484726544203772,
-        "Test_RMSE": 156343225.60118067,
-        "Test_MAE": 114595360.8729334,
-        "Test_R2": 0.7297749863932566
+        "CV_RMSE_Mean": 0.15484956122612475,
+        "CV_RMSE_Std": 0.012033988767723824,
+        "Val_RMSE_Norm": 0.14688433598163586,
+        "Val_MAE_Norm": 0.08263095685594424,
+        "Val_R2_Norm": 0.7831526967694469,
+        "Test_RMSE_Norm": 0.1483885478587744,
+        "Test_MAE_Norm": 0.08511330243124585,
+        "Test_R2_Norm": 0.7735066558479359,
+        "Val_RMSE_Orig": 130555900.83572084,
+        "Val_MAE_Orig": 73445265.19556274,
+        "Test_RMSE_Orig": 131892896.61103728,
+        "Test_MAE_Orig": 75651660.18385872
       },
       {
         "Model": "Lasso with CV",
-        "CV_RMSE_Mean": 147067003.4301942,
-        "CV_RMSE_Std": 5125860.446805717,
-        "Val_RMSE": 147467293.5549158,
-        "Val_MAE": 111496290.43291715,
-        "Val_R2": 0.7484726529486465,
-        "Test_RMSE": 156343226.27099413,
-        "Test_MAE": 114595358.52806407,
-        "Test_R2": 0.7297749840778334
+        "CV_RMSE_Mean": 0.15972053947433204,
+        "CV_RMSE_Std": 0.004094378299757882,
+        "Val_RMSE_Norm": 0.16085223687792563,
+        "Val_MAE_Norm": 0.12550450599564625,
+        "Val_R2_Norm": 0.739949755486455,
+        "Test_RMSE_Norm": 0.15936128871284244,
+        "Test_MAE_Norm": 0.12481505090917382,
+        "Test_R2_Norm": 0.7387716298737319,
+        "Val_RMSE_Orig": 142971056.42131832,
+        "Val_MAE_Orig": 111552765.17199418,
+        "Test_RMSE_Orig": 141645849.89408088,
+        "Test_MAE_Orig": 110939953.5382783
       },
       {
         "Model": "Elastic Net",
-        "CV_RMSE_Mean": 147066424.65784544,
-        "CV_RMSE_Std": 5124963.7783685215,
-        "Val_RMSE": 147474222.58497465,
-        "Val_MAE": 111480834.85327345,
-        "Val_R2": 0.7484490154158531,
-        "Test_RMSE": 156358637.17098168,
-        "Test_MAE": 114581805.88238086,
-        "Test_R2": 0.7297217087804151
+        "CV_RMSE_Mean": 0.15966524493277992,
+        "CV_RMSE_Std": 0.004084397439829416,
+        "Val_RMSE_Norm": 0.16088297713195104,
+        "Val_MAE_Norm": 0.12559333330006237,
+        "Val_R2_Norm": 0.7398503502858413,
+        "Test_RMSE_Norm": 0.15920565652797145,
+        "Test_MAE_Norm": 0.12473994609408204,
+        "Test_R2_Norm": 0.7392816118176084,
+        "Val_RMSE_Orig": 142998379.42706555,
+        "Val_MAE_Orig": 111631717.96617305,
+        "Test_RMSE_Orig": 141507518.6012369,
+        "Test_MAE_Orig": 110873197.7693539
       },
       {
         "Model": "Ridge with CV",
-        "CV_RMSE_Mean": 147065800.90666556,
-        "CV_RMSE_Std": 5123496.253107014,
-        "Val_RMSE": 147478797.98549303,
-        "Val_MAE": 111471475.19477172,
-        "Val_R2": 0.7484334063915884,
-        "Test_RMSE": 156368516.89746213,
-        "Test_MAE": 114573385.28385435,
-        "Test_R2": 0.7296875519215218
+        "CV_RMSE_Mean": 0.15967157255809414,
+        "CV_RMSE_Std": 0.004083677165412387,
+        "Val_RMSE_Norm": 0.16091477568113216,
+        "Val_MAE_Norm": 0.12563886257009474,
+        "Val_R2_Norm": 0.7397475028734276,
+        "Test_RMSE_Norm": 0.15915033137680526,
+        "Test_MAE_Norm": 0.12470061387342773,
+        "Test_R2_Norm": 0.7394627834955427,
+        "Val_RMSE_Orig": 143026643.0823142,
+        "Val_MAE_Orig": 111672185.96314323,
+        "Test_RMSE_Orig": 141458343.6847892,
+        "Test_MAE_Orig": 110838237.92516714
+      },
+      {
+        "Model": "Linear Regression (MSE)",
+        "CV_RMSE_Mean": 0.15967261280226458,
+        "CV_RMSE_Std": 0.004071514922493403,
+        "Val_RMSE_Norm": 0.1609431345688055,
+        "Val_MAE_Norm": 0.12568870676491667,
+        "Val_R2_Norm": 0.7396557633591188,
+        "Test_RMSE_Norm": 0.15916804772340454,
+        "Test_MAE_Norm": 0.12474617488643731,
+        "Test_R2_Norm": 0.7394047751395513,
+        "Val_RMSE_Orig": 143051849.44691494,
+        "Val_MAE_Orig": 111716489.21517424,
+        "Test_RMSE_Orig": 141474090.5891431,
+        "Test_MAE_Orig": 110878734.13639826
+      },
+      {
+        "Model": "Linear Regression (MAE)",
+        "CV_RMSE_Mean": 0.15967261280226458,
+        "CV_RMSE_Std": 0.004071514922493403,
+        "Val_RMSE_Norm": 0.1609431345688055,
+        "Val_MAE_Norm": 0.12568870676491667,
+        "Val_R2_Norm": 0.7396557633591188,
+        "Test_RMSE_Norm": 0.15916804772340454,
+        "Test_MAE_Norm": 0.12474617488643731,
+        "Test_R2_Norm": 0.7394047751395513,
+        "Val_RMSE_Orig": 143051849.44691494,
+        "Val_MAE_Orig": 111716489.21517424,
+        "Test_RMSE_Orig": 141474090.5891431,
+        "Test_MAE_Orig": 110878734.13639826
       },
       {
         "Model": "Dummy Regressor",
-        "CV_RMSE_Mean": 290194185.77133393,
-        "CV_RMSE_Std": 5212121.010658558,
-        "Val_RMSE": 294037993.4618058,
-        "Val_MAE": 233791908.4727757,
-        "Val_R2": -1.5921776967964263e-06,
-        "Test_RMSE": 300807425.72462493,
-        "Test_MAE": 235286908.6278979,
-        "Test_R2": -0.0003328196709082576
+        "CV_RMSE_Mean": 0.3177008584481567,
+        "CV_RMSE_Std": 0.005766321328266892,
+        "Val_RMSE_Norm": 0.3155240720445263,
+        "Val_MAE_Norm": 0.2534481245913549,
+        "Val_R2_Norm": -0.000617405919228764,
+        "Test_RMSE_Norm": 0.3120924505140083,
+        "Test_MAE_Norm": 0.2523922177366421,
+        "Test_R2_Norm": -0.001892674066219291,
+        "Val_RMSE_Orig": 280448757.08379287,
+        "Val_MAE_Orig": 225273498.36190364,
+        "Test_RMSE_Orig": 277398612.6470161,
+        "Test_MAE_Orig": 224334971.66540903
       }
     ],
     "em": [
       {
         "Model": "Quadratic (Degree 2)",
-        "CV_RMSE_Mean": 156971022.82191533,
-        "CV_RMSE_Std": 10337086.72233985,
-        "Val_RMSE": 156661624.0985648,
-        "Val_MAE": 99572287.01275301,
-        "Val_R2": 0.8698290109663196,
-        "Test_RMSE": 161070372.48945677,
-        "Test_MAE": 101367532.33092435,
-        "Test_R2": 0.8580112958304753
-      },
-      {
-        "Model": "Linear Regression (MSE)",
-        "CV_RMSE_Mean": 329434714.30728006,
-        "CV_RMSE_Std": 23085815.34458866,
-        "Val_RMSE": 323861452.06677026,
-        "Val_MAE": 232260800.1954676,
-        "Val_R2": 0.4437020326730904,
-        "Test_RMSE": 321760820.1822277,
-        "Test_MAE": 230798404.83798945,
-        "Test_R2": 0.43338405695870363
-      },
-      {
-        "Model": "Linear Regression (MAE)",
-        "CV_RMSE_Mean": 329434714.30728006,
-        "CV_RMSE_Std": 23085815.34458866,
-        "Val_RMSE": 323861452.06677026,
-        "Val_MAE": 232260800.1954676,
-        "Val_R2": 0.4437020326730904,
-        "Test_RMSE": 321760820.1822277,
-        "Test_MAE": 230798404.83798945,
-        "Test_R2": 0.43338405695870363
-      },
-      {
-        "Model": "Lasso with CV",
-        "CV_RMSE_Mean": 329434713.86051047,
-        "CV_RMSE_Std": 23085816.252709955,
-        "Val_RMSE": 323861454.70188427,
-        "Val_MAE": 232260798.6268611,
-        "Val_R2": 0.4437020236204008,
-        "Test_RMSE": 321760821.4330855,
-        "Test_MAE": 230798401.55433035,
-        "Test_R2": 0.4333840525532202
-      },
-      {
-        "Model": "Ridge with CV",
-        "CV_RMSE_Mean": 329436389.60438025,
-        "CV_RMSE_Std": 23160776.22869635,
-        "Val_RMSE": 323866542.2544383,
-        "Val_MAE": 232211754.1509862,
-        "Val_R2": 0.443684545668769,
-        "Test_RMSE": 321764160.43604076,
-        "Test_MAE": 230744245.45297277,
-        "Test_R2": 0.4333722926246425
-      },
-      {
-        "Model": "Elastic Net",
-        "CV_RMSE_Mean": 329425008.8764113,
-        "CV_RMSE_Std": 23114477.071195766,
-        "Val_RMSE": 323887838.43866557,
-        "Val_MAE": 232055998.99208465,
-        "Val_R2": 0.4436113810507727,
-        "Test_RMSE": 321779558.2224988,
-        "Test_MAE": 230568729.9419345,
-        "Test_R2": 0.43331806022543884
+        "CV_RMSE_Mean": 0.11501178353930401,
+        "CV_RMSE_Std": 0.0058716075065079745,
+        "Val_RMSE_Norm": 0.10888698742017046,
+        "Val_MAE_Norm": 0.07404031524675514,
+        "Val_R2_Norm": 0.88960781814539,
+        "Test_RMSE_Norm": 0.10873435951010595,
+        "Test_MAE_Norm": 0.0735789728554256,
+        "Test_R2_Norm": 0.8869200094226046,
+        "Val_RMSE_Orig": 122971212.52641347,
+        "Val_MAE_Orig": 83617221.46465391,
+        "Test_RMSE_Orig": 122798842.62610959,
+        "Test_MAE_Orig": 83096205.73453079
       },
       {
         "Model": "Cubic (Degree 3)",
-        "CV_RMSE_Mean": 327873944.03299516,
-        "CV_RMSE_Std": 24703383.688144494,
-        "Val_RMSE": 333624102.2058432,
-        "Val_MAE": 141421430.4897097,
-        "Val_R2": 0.40965785120594655,
-        "Test_RMSE": 270108717.01871055,
-        "Test_MAE": 125795646.86127794,
-        "Test_R2": 0.6006996693645511
+        "CV_RMSE_Mean": 0.2333145511103325,
+        "CV_RMSE_Std": 0.01502964943485422,
+        "Val_RMSE_Norm": 0.22196145866831082,
+        "Val_MAE_Norm": 0.1057702816193032,
+        "Val_R2_Norm": 0.5412865304537507,
+        "Test_RMSE_Norm": 0.2254024607757122,
+        "Test_MAE_Norm": 0.10621382780521735,
+        "Test_R2_Norm": 0.5140747481579784,
+        "Val_RMSE_Orig": 250671548.1184984,
+        "Val_MAE_Orig": 119451369.60944656,
+        "Test_RMSE_Orig": 254557634.1557608,
+        "Test_MAE_Orig": 119952287.24511278
+      },
+      {
+        "Model": "Lasso with CV",
+        "CV_RMSE_Mean": 0.24681184373785822,
+        "CV_RMSE_Std": 0.004857879773605701,
+        "Val_RMSE_Norm": 0.2550520376962344,
+        "Val_MAE_Norm": 0.19269185474020248,
+        "Val_R2_Norm": 0.3943190036180356,
+        "Test_RMSE_Norm": 0.24363464951865332,
+        "Test_MAE_Norm": 0.1839609917290526,
+        "Test_R2_Norm": 0.4322851308838809,
+        "Val_RMSE_Orig": 288042300.33301955,
+        "Val_MAE_Orig": 217616003.36990148,
+        "Test_RMSE_Orig": 275148105.1555543,
+        "Test_MAE_Orig": 207755827.82165018
+      },
+      {
+        "Model": "Ridge with CV",
+        "CV_RMSE_Mean": 0.2467325268588544,
+        "CV_RMSE_Std": 0.004756919017512014,
+        "Val_RMSE_Norm": 0.2552581165618205,
+        "Val_MAE_Norm": 0.19283717064261013,
+        "Val_R2_Norm": 0.39333984282022916,
+        "Test_RMSE_Norm": 0.2437595529530091,
+        "Test_MAE_Norm": 0.18429296387539662,
+        "Test_R2_Norm": 0.43170288436421844,
+        "Val_RMSE_Orig": 288275034.9193793,
+        "Val_MAE_Orig": 217780115.47495478,
+        "Test_RMSE_Orig": 275289164.49731183,
+        "Test_MAE_Orig": 208130739.63001338
+      },
+      {
+        "Model": "Elastic Net",
+        "CV_RMSE_Mean": 0.24673383758769946,
+        "CV_RMSE_Std": 0.004754723653221627,
+        "Val_RMSE_Norm": 0.2552617998297598,
+        "Val_MAE_Norm": 0.19285036389710028,
+        "Val_R2_Norm": 0.3933223349888745,
+        "Test_RMSE_Norm": 0.2437583756820379,
+        "Test_MAE_Norm": 0.18430058129303062,
+        "Test_R2_Norm": 0.43170837369231696,
+        "Val_RMSE_Orig": 288279194.60765135,
+        "Val_MAE_Orig": 217795015.23975006,
+        "Test_RMSE_Orig": 275287834.9496566,
+        "Test_MAE_Orig": 208139342.3391613
+      },
+      {
+        "Model": "Linear Regression (MSE)",
+        "CV_RMSE_Mean": 0.24673481558279642,
+        "CV_RMSE_Std": 0.0047506728801620214,
+        "Val_RMSE_Norm": 0.25527418694650633,
+        "Val_MAE_Norm": 0.1928753565015685,
+        "Val_R2_Norm": 0.3932634529359442,
+        "Test_RMSE_Norm": 0.24376194525636155,
+        "Test_MAE_Norm": 0.18432129235018344,
+        "Test_R2_Norm": 0.43169172955408,
+        "Val_RMSE_Orig": 288293183.96305656,
+        "Val_MAE_Orig": 217823240.56720623,
+        "Test_RMSE_Orig": 275291866.23836416,
+        "Test_MAE_Orig": 208162732.31321722
+      },
+      {
+        "Model": "Linear Regression (MAE)",
+        "CV_RMSE_Mean": 0.24673481558279642,
+        "CV_RMSE_Std": 0.0047506728801620214,
+        "Val_RMSE_Norm": 0.25527418694650633,
+        "Val_MAE_Norm": 0.1928753565015685,
+        "Val_R2_Norm": 0.3932634529359442,
+        "Test_RMSE_Norm": 0.24376194525636155,
+        "Test_MAE_Norm": 0.18432129235018344,
+        "Test_R2_Norm": 0.43169172955408,
+        "Val_RMSE_Orig": 288293183.96305656,
+        "Val_MAE_Orig": 217823240.56720623,
+        "Test_RMSE_Orig": 275291866.23836416,
+        "Test_MAE_Orig": 208162732.31321722
       },
       {
         "Model": "Dummy Regressor",
-        "CV_RMSE_Mean": 435014044.1446091,
-        "CV_RMSE_Std": 21891458.346386723,
-        "Val_RMSE": 434271894.3875369,
-        "Val_MAE": 300961411.56123704,
-        "Val_R2": -0.00025884856153468583,
-        "Test_RMSE": 427478325.8537896,
-        "Test_MAE": 296912709.14894,
-        "Test_R2": -0.00011667744089605137
+        "CV_RMSE_Mean": 0.3263993838188153,
+        "CV_RMSE_Std": 0.006023633738673324,
+        "Val_RMSE_Norm": 0.3277385792192806,
+        "Val_MAE_Norm": 0.24361542874793593,
+        "Val_R2_Norm": -9.552901291209892e-05,
+        "Test_RMSE_Norm": 0.3235416453495799,
+        "Test_MAE_Norm": 0.24055428511274723,
+        "Test_R2_Norm": -0.001180867830906207,
+        "Val_RMSE_Orig": 370130641.2561585,
+        "Val_MAE_Orig": 275126398.23228633,
+        "Test_RMSE_Orig": 365390845.8124776,
+        "Test_MAE_Orig": 271669304.29061913
       }
     ],
     "multi_output": [
@@ -536,89 +659,121 @@
         "Model": "Quadratic (Degree 2) (Multi-Output)",
         "CV_RMSE_Mean": NaN,
         "CV_RMSE_Std": NaN,
-        "Val_RMSE": 121689463.35725681,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 130305398.58224082,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
-      },
-      {
-        "Model": "Linear Regression (MSE) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
-        "Val_RMSE": 235664372.59512872,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 239052022.89170417,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
-      },
-      {
-        "Model": "Linear Regression (MAE) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
-        "Val_RMSE": 235664372.59512872,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 239052022.89170417,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
-      },
-      {
-        "Model": "Lasso with CV (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
-        "Val_RMSE": 235664374.12840003,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 239052023.8520398,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
-      },
-      {
-        "Model": "Ridge with CV (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
-        "Val_RMSE": 235672670.11996567,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 239066338.66675144,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
-      },
-      {
-        "Model": "Elastic Net (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
-        "Val_RMSE": 235692609.67650384,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 239098435.15359226,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
+        "Val_RMSE_Norm": 0.09982183336102018,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.10055093997087106,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
       },
       {
         "Model": "Cubic (Degree 3) (Multi-Output)",
         "CV_RMSE_Mean": NaN,
         "CV_RMSE_Std": NaN,
-        "Val_RMSE": 240537256.12989986,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 198335872.38611782,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
+        "Val_RMSE_Norm": 0.18442289732497336,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.18689550431724328,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
+      },
+      {
+        "Model": "Lasso with CV (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE_Norm": 0.20795213728708,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.20149796911574788,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
+      },
+      {
+        "Model": "Ridge with CV (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE_Norm": 0.20808644612147634,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.20145494216490717,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
+      },
+      {
+        "Model": "Linear Regression (MSE) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE_Norm": 0.2081086607576559,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.20146499648988303,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
+      },
+      {
+        "Model": "Linear Regression (MAE) (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE_Norm": 0.2081086607576559,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.20146499648988303,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
       },
       {
         "Model": "Dummy Regressor (Multi-Output)",
         "CV_RMSE_Mean": NaN,
         "CV_RMSE_Std": NaN,
-        "Val_RMSE": 364154943.92467135,
-        "Val_MAE": NaN,
-        "Val_R2": NaN,
-        "Test_RMSE": 364142875.7892073,
-        "Test_MAE": NaN,
-        "Test_R2": NaN
+        "Val_RMSE_Norm": 0.32163132563190344,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.3178170479317941,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
+      },
+      {
+        "Model": "Elastic Net (Multi-Output)",
+        "CV_RMSE_Mean": NaN,
+        "CV_RMSE_Std": NaN,
+        "Val_RMSE_Norm": 0.32163132563190344,
+        "Val_MAE_Norm": NaN,
+        "Val_R2_Norm": NaN,
+        "Test_RMSE_Norm": 0.3178170479317941,
+        "Test_MAE_Norm": NaN,
+        "Test_R2_Norm": NaN,
+        "Val_RMSE_Orig": NaN,
+        "Val_MAE_Orig": NaN,
+        "Test_RMSE_Orig": NaN,
+        "Test_MAE_Orig": NaN
       }
     ]
   }
