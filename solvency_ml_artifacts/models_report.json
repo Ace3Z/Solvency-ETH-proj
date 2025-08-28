@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-27T12:49:53.753901",
+  "timestamp": "2025-08-28T12:50:06.087963",
   "data_shape": [
     10229,
     30
@@ -657,8 +657,8 @@
     "multi_output": [
       {
         "Model": "Quadratic (Degree 2) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.08230800917213346,
+        "CV_RMSE_Std": 0.0018545891800376309,
         "Val_RMSE_Norm": 0.08802704880535894,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -672,8 +672,8 @@
       },
       {
         "Model": "Cubic (Degree 3) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.1413650814305606,
+        "CV_RMSE_Std": 0.009885543563921911,
         "Val_RMSE_Norm": 0.14838286004211212,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -687,8 +687,8 @@
       },
       {
         "Model": "Linear Regression (MSE) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.15501862162013771,
+        "CV_RMSE_Std": 0.004754016213168487,
         "Val_RMSE_Norm": 0.16210049398186194,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -702,8 +702,8 @@
       },
       {
         "Model": "Linear Regression (MAE) (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.15501862162013771,
+        "CV_RMSE_Std": 0.004754016213168487,
         "Val_RMSE_Norm": 0.16210049398186194,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -717,8 +717,8 @@
       },
       {
         "Model": "Ridge with CV (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.1550307218529209,
+        "CV_RMSE_Std": 0.004789601562583857,
         "Val_RMSE_Norm": 0.16211587110653572,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -732,8 +732,8 @@
       },
       {
         "Model": "Lasso with CV (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.155032708675994,
+        "CV_RMSE_Std": 0.004828435809265699,
         "Val_RMSE_Norm": 0.1622668046246496,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -747,8 +747,8 @@
       },
       {
         "Model": "Dummy Regressor (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.2625090042578717,
+        "CV_RMSE_Std": 0.008388118663755063,
         "Val_RMSE_Norm": 0.2647918558315646,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
@@ -762,8 +762,8 @@
       },
       {
         "Model": "Elastic Net (Multi-Output)",
-        "CV_RMSE_Mean": NaN,
-        "CV_RMSE_Std": NaN,
+        "CV_RMSE_Mean": 0.2625090042578717,
+        "CV_RMSE_Std": 0.008388118663755063,
         "Val_RMSE_Norm": 0.2647918558315646,
         "Val_MAE_Norm": NaN,
         "Val_R2_Norm": NaN,
